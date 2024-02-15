@@ -10,7 +10,7 @@ df = df.dropna()
 df = df[['Ticker', 'Market Cap', 'return_1y', 'return_5y']]
 
 st.title('Liquidation Preference Premium')
-st.subheader("Calculate the return premium on the Russell 2000")
+st.markdown("Calculates how much more you would make if you were to invest the same amount in ~1,000 companies in the Russell 2000 with and without a liquidation preference.")
 
 # Controls
 equity_stake_per_company = st.slider('Equity Stake per Company', 0.0, 1.0, 0.1)
